@@ -39,32 +39,32 @@ const data = [
 
 
 
-// let currentId = 0
+let currentId = 0
 
-// $(document).ready(function() {
-//     updateSlide(currentId)
+$(document).ready(function() {
+    updateSlide(currentId)
 
-//     $('.book-next').click(function() {
-//         if(currentId < data.length - 1) {
-//             currentId++
-//             updateSlide(currentId)
-//         }
-//     })
+    $('.book-next').click(function() {
+        if(currentId < data.length - 1) {
+            currentId++
+            updateSlide(currentId)
+        }
+    })
 
-//     $('.book-back').click(function() {
-//         if(currentId > 0) {
-//             currentId--
-//             updateSlide(currentId)
-//         }
-//     })
-// })
+    $('.book-back').click(function() {
+        if(currentId > 0) {
+            currentId--
+            updateSlide(currentId)
+        }
+    })
+})
 
-// function updateSlide(id) {
-//     const obj = data[id]
-//     $('.book-image').attr('src', obj.img)
-//     $('.book-text-wrapper').html('')
-//     $(obj.dataText).each(function(i, v) {
-//         $('.book-text-wrapper').append(`<span style="left: ${v.x}px; top: ${v.y}px; width: ${v.width}; color: ${v.color};">${v.text}</span>`)
-//     })
-//     $('.book-progress span').css('--progress', (((currentId + 1) / data.length) * 100)+'%')
-// }
+function updateSlide(id) {
+    const obj = data[id]
+    $('.book-image').attr('src', obj.img)
+    $('.book-text-wrapper').html('')
+    $(obj.dataText).each(function(i, v) {
+        $('.book-text-wrapper').append(`<span style="left: ${v.x}px; top: ${v.y}px; width: ${v.width}; color: ${v.color};">${v.text}</span>`)
+    })
+    $('.book-progress span').css('--progress', (((currentId + 1) / data.length) * 100)+'%')
+}
