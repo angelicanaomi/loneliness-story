@@ -4,9 +4,9 @@ const data = [
         dataText: [
             {
                 text: 'Hi! Perkenalkan, kami Kaka si Boneka Monyet, Popo si Boneka Beruang dan Puma si Kucing Hitam.',
-                x: 200,
-                y: 24,
-                width: '60%',
+                x: 24,
+                y: 64,
+                width: '80%',
                 color: 'black'
             }
         ]
@@ -16,9 +16,9 @@ const data = [
         dataText: [
             {
                 text: 'Kami bertiga tinggal di rumah Nanda, sahabat kami. Sekarang, Nanda duduk di kelas 4 SD',
-                x: 200,
-                y: 24,
-                width: '60%',
+                x: 24,
+                y: 64,
+                width: '80%',
                 color: 'black'
             }
         ]
@@ -28,9 +28,9 @@ const data = [
         dataText: [
             {
                 text: 'Nanda sangat menyayangi kami. Kami pun sangat menyayangi Nanda. Ssst.. Kami punya kekuatan untuk melihat dan merasakan apa yang Nanda rasakan',
-                x: 200,
-                y: 24,
-                width: '60%',
+                x: 24,
+                y: 64,
+                width: '80%',
                 color: 'black'
             }
         ]
@@ -40,6 +40,9 @@ const data = [
 
 
 let currentId = 0
+let isTouch = false
+let firstPosition = 0
+let lastPosition = 0
 
 $(document).ready(function() {
     updateSlide(currentId)
@@ -56,6 +59,32 @@ $(document).ready(function() {
             currentId--
             updateSlide(currentId)
         }
+    })
+
+    $('.book-image').on('touchstart', function(e) {
+        isTouch = true
+        const touch = e.touches[0]
+        firstPosition = touch.pageX
+    })
+
+    $('.book-image').on('touchmove', function(e) {
+        lastPosition = e.touches[0].pageX
+    })
+
+    $('.book-image').on('touchend', function() {
+        if(lastPosition < firstPosition && firstPosition - lastPosition > 64) {
+            if(currentId < data.length - 1) {
+                currentId++
+                updateSlide(currentId)
+            }
+        } else if(lastPosition > firstPosition && lastPosition - firstPosition > 64) {
+            if(currentId > 0) {
+                currentId--
+                updateSlide(currentId)
+            }
+        }
+
+        isTouch = false
     })
 })
 

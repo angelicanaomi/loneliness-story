@@ -10,6 +10,7 @@
 }
 body {
     font-family: 'Itim', cursive;
+    background-color: #111;
 }
 /* end: Global */
 
@@ -34,12 +35,14 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    pointer-events: none;
 }
 .book-text-wrapper > * {
     position: absolute;
-    font-size: 1.5rem;
+    font-size: calc(1rem + .6vw);
     opacity: 0;
     animation: fadeIn 1.5s .3s linear forwards;
+    right: 0;
 }
 @keyframes fadeIn {
     0% {
@@ -58,13 +61,17 @@ body {
     align-items: center;
     padding: 1rem;
     z-index: 10;
-    gap: 2rem;
+    gap: 1rem;
 }
 .book-control > * {
     padding: .5rem 1rem;
     border-radius: .5rem;
     background-color: #222;
     cursor: pointer;
+    opacity: .5;
+}
+.book-control > :hover {
+    opacity: 1;
 }
 .book-music {
     margin-left: auto;
@@ -94,3 +101,14 @@ body {
     transition: .3s;
 }
 /* end: Book */
+
+
+
+/* start: Breakpoints */
+@media screen and (max-width: 575px) {
+    .book-next,
+    .book-back {
+        display: none;
+    }
+}
+/* end: Breakpoints */
