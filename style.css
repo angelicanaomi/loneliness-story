@@ -115,9 +115,6 @@ body {
 
 /* start: Breakpoints */
 @media screen and (max-width: 575px) {
-    .book:-ms-fullscreen,
-    .book:-moz-full-screen,
-    .book:-webkit-full-screen,
     .book:fullscreen {
         width: 100vw;
         height: 100vh;
@@ -142,13 +139,7 @@ body {
         color: #FFF;
         cursor: pointer;
     }
-    .book:-ms-fullscreen figcaption,
-    .book:-moz-full-screen figcaption,
-    .book:-webkit-full-screen figcaption,
     .book:fullscreen figcaption,
-    .book:-ms-fullscreen .btn-fullscreen,
-    .book:-moz-full-screen .btn-fullscreen,
-    .book:-webkit-full-screen .btn-fullscreen,
     .book:fullscreen .btn-fullscreen {
         display: none;
     }
