@@ -11,6 +11,11 @@
 body {
     font-family: 'Itim', cursive;
     background-color: #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 /* end: Global */
 
@@ -19,14 +24,15 @@ body {
 /* start: Book */
 .book {
     width: 100vw;
-    height: 100vh;
+    aspect-ratio: 16 / 9;
+    height: auto;
     position: relative;
     background-color: #000;
 }
 .book-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 }
 .book-text-wrapper {
@@ -39,7 +45,7 @@ body {
 }
 .book-text-wrapper > * {
     position: absolute;
-    font-size: calc(1rem + .6vw);
+    font-size: calc(.875rem + .5vw);
     opacity: 0;
     animation: fadeIn 1.5s .3s linear forwards;
     right: 0;
@@ -100,14 +106,50 @@ body {
     background-color: #222;
     transition: .3s;
 }
+.btn-fullscreen {
+    display: none;
+}
 /* end: Book */
 
 
 
 /* start: Breakpoints */
 @media screen and (max-width: 575px) {
+    .book:-ms-fullscreen,
+    .book:-moz-full-screen,
+    .book:-webkit-full-screen,
+    .book:fullscreen {
+        width: 100vw;
+        height: 100vh;
+        aspect-ratio: unset;
+    }
     .book-next,
     .book-back {
+        display: none;
+    }
+    .btn-fullscreen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background-color: #111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        color: #FFF;
+        cursor: pointer;
+    }
+    .book:-ms-fullscreen figcaption,
+    .book:-moz-full-screen figcaption,
+    .book:-webkit-full-screen figcaption,
+    .book:fullscreen figcaption,
+    .book:-ms-fullscreen .btn-fullscreen,
+    .book:-moz-full-screen .btn-fullscreen,
+    .book:-webkit-full-screen .btn-fullscreen,
+    .book:fullscreen .btn-fullscreen {
         display: none;
     }
 }

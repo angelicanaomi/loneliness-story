@@ -86,6 +86,12 @@ $(document).ready(function() {
 
         isTouch = false
     })
+
+    if($(window).width() < 576) {
+        $('.btn-fullscreen').click(function() {
+            $(this)[0].webkitRequestFullscreen()
+        })
+    }
 })
 
 function updateSlide(id) {
