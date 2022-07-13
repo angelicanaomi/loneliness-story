@@ -117,11 +117,8 @@ body {
 /* start: Breakpoints */
 @media screen and (max-width: 575px) {
     .book:fullscreen {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        height: 100vh;
+        width: auto;
     }
     .book-next,
     .book-back {
