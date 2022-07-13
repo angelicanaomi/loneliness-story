@@ -1,50 +1,16 @@
-const data = [
-    {
-        img: 'img/1.jpg',
-        dataText: [
-            {
-                text: 'Hi! Perkenalkan, kami Kaka si Boneka Monyet, Popo si Boneka Beruang dan Puma si Kucing Hitam.',
-                x: 24,
-                y: 64,
-                width: '80%',
-                color: 'black'
-            }
-        ]
-    },
-    {
-        img: 'img/2.jpg',
-        dataText: [
-            {
-                text: 'Kami bertiga tinggal di rumah Nanda, sahabat kami. Sekarang, Nanda duduk di kelas 4 SD',
-                x: 24,
-                y: 64,
-                width: '80%',
-                color: 'black'
-            }
-        ]
-    },
-    {
-        img: 'img/3.jpg',
-        dataText: [
-            {
-                text: 'Nanda sangat menyayangi kami. Kami pun sangat menyayangi Nanda. Ssst.. Kami punya kekuatan untuk melihat dan merasakan apa yang Nanda rasakan',
-                x: 24,
-                y: 64,
-                width: '80%',
-                color: 'black'
-            }
-        ]
-    }
-]
-
-
-
+let data;
 let currentId = 0
 let isTouch = false
 let firstPosition = 0
 let lastPosition = 0
 
-$(document).ready(function() {
+$(document).ready(async function() {
+    await fetch('data.json')
+    .then(resp=> resp.json())
+    .then(jsonData=> {
+        data = jsonData
+    })
+
     updateSlide(currentId)
 
     $('.book-next').click(function() {
