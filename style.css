@@ -41,7 +41,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    pointer-events: none;
 }
 .book-text-wrapper > * {
     position: absolute;
@@ -49,6 +48,7 @@ body {
     opacity: 0;
     animation: fadeIn 1.5s .3s linear forwards;
     right: 0;
+    display: inline-block;
 }
 @keyframes fadeIn {
     0% {
@@ -57,6 +57,11 @@ body {
     100% {
         opacity: 1;
     }
+}
+.book-text-wrapper img {
+    width: 100%;
+    cursor: pointer;
+    object-fit: contain;
 }
 .book-control {
     position: absolute;
