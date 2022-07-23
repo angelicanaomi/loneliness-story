@@ -74,6 +74,12 @@ $(document).ready(async function() {
             $('.book-fullscreen img').attr('src', 'img/buttons/Windowed.png')
         }
     })
+
+    $('.book-image').on('load', function() {
+        const obj = dataActive[curId]
+
+        setSlide(obj)
+    })
 })
 
 
@@ -88,6 +94,9 @@ function updateSlide() {
     }
 
     $('.book-image').attr('src', obj.img)
+}
+
+function setSlide(obj) {
     $('.book-text-wrapper').html('')
     $(obj.dataText).each(function(i, v) {
         if(v.goto == "first") {
