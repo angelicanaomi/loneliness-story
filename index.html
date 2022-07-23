@@ -10,27 +10,29 @@
 <body>
 
     <!-- start: Book -->
-    <audio id="book-music" autoplay loop>
-        <source src="music/music.mp3" type="audio/mpeg">
-        Your browser not support audio tag
-    </audio>
-    <div class="book">
-        <div class="btn-fullscreen">Click for better experience</div>
-        <img src="img/1/1.jpg" class="book-image">
-        <div class="book-text-wrapper">
-            
-        </div>
-        <div class="book-control book-top">
-            <div class="book-home" onclick="home()"><img src="img/buttons/Home.png" alt=""></div>
-            <div class="book-music"><img src="img/buttons/Music.png" alt=""></div>
-            <div class="book-fullscreen"><img src="img/buttons/Fullscreen.png" alt=""></div>
-        </div>
-        <div class="book-control book-bottom">
-            <div class="book-back"><img src="img/buttons/Back.png" alt=""></div>
-            <div class="book-progress">
-                <span style="--progress: 50%;"></span>
+    <div class="book-outer">
+        <audio id="book-music" autoplay loop>
+            <source src="music/music.mp3" type="audio/mpeg">
+            Your browser not support audio tag
+        </audio>
+        <div class="book">
+            <div class="btn-fullscreen">Click for better experience</div>
+            <img src="img/1/1.jpg" class="book-image">
+            <div class="book-text-wrapper">
+                
             </div>
-            <div class="book-next"><img src="img/buttons/Next.png" alt=""></div>
+            <div class="book-control book-top">
+                <div class="book-home" onclick="home()"><img src="img/buttons/Home.png" alt=""></div>
+                <div class="book-music"><img src="img/buttons/Music.png" alt=""></div>
+                <div class="book-fullscreen"><img src="img/buttons/Fullscreen.png" alt=""></div>
+            </div>
+            <div class="book-control book-bottom">
+                <div class="book-back"><img src="img/buttons/Back.png" alt=""></div>
+                <div class="book-progress">
+                    <span style="--progress: 50%;"></span>
+                </div>
+                <div class="book-next"><img src="img/buttons/Next.png" alt=""></div>
+            </div>
         </div>
     </div>
     <!-- end: Book -->

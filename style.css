@@ -22,12 +22,17 @@ body {
 
 
 /* start: Book */
+.book-outer {
+    width: 100vw;
+    height: 100vh;
+}
 .book {
     width: 100vw;
     aspect-ratio: 16 / 9;
     height: auto;
     position: relative;
     background-color: #000;
+    margin: 0 auto;
 }
 .book-image {
     width: 100%;

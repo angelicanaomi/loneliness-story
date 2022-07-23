@@ -56,16 +56,16 @@ $(document).ready(async function() {
 
     if($(window).width() < 576) {
         $('.btn-fullscreen').click(function() {
-            document.body.requestFullscreen()
+            $('.book-outer')[0].requestFullscreen()
             screen.orientation.lock('landscape-primary')
         })
     }
 
     $('.book-fullscreen').click(function() {
-        isFullscreen ? document.body.exitFullscreen() : document.body.requestFullscreen()
+        isFullscreen ? document.exitFullscreen() : $('.book-outer')[0].requestFullscreen()
     })
 
-    $('.book').on('fullscreenchange', function() {
+    $('.book-outer').on('fullscreenchange', function() {
         if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
             isFullscreen = false
             $('.book-fullscreen img').attr('src', 'img/buttons/Fullscreen.png')
