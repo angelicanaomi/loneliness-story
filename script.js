@@ -5,6 +5,7 @@ let lastPosition = 0
 let curId = 0
 let index = []
 let dataActive;
+let isFullscreen = false
 
 $(document).ready(async function() {
     await fetch('data.json')
@@ -34,6 +35,11 @@ $(document).ready(async function() {
         lastPosition = e.touches[0].pageX
     })
 
+    $('.book-music').click(function() {
+        $('#book-music')[0].muted = !$('#book-music')[0].muted
+        $('#book-music')[0].muted ? $(this).find('img').attr('src', 'img/buttons/Muted.png') : $(this).find('img').attr('src', 'img/buttons/Music.png')
+    })
+
     $('.book-image').on('touchend', function() {
         if(lastPosition < firstPosition && firstPosition - lastPosition > 64) {
             controlSlide(true)
@@ -46,10 +52,24 @@ $(document).ready(async function() {
 
     if($(window).width() < 576) {
         $('.btn-fullscreen').click(function() {
-            $(this)[0].webkitRequestFullscreen()
+            $('.book')[0].requestFullscreen()
             screen.orientation.lock('landscape-primary')
         })
     }
+
+    $('.book-fullscreen').click(function() {
+        isFullscreen ? document.exitFullscreen() : $('.book')[0].requestFullscreen()
+    })
+
+    $('.book').on('fullscreenchange', function() {
+        if (!document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+            isFullscreen = false
+            $('.book-fullscreen img').attr('src', 'img/buttons/Fullscreen.png')
+        } else {
+            isFullscreen = true
+            $('.book-fullscreen img').attr('src', 'img/buttons/Windowed.png')
+        }
+    })
 })
 
 
@@ -68,9 +88,9 @@ function updateSlide() {
     $(obj.dataText).each(function(i, v) {
         if(v.action) {
             const arr = [curId, i]
-            $('.book-text-wrapper').append(`<span onclick="setClick(${arr})" style="left: ${v.x}; top: ${v.y}; max-width: ${v.width}; color: ${v.color};">${v.text}</span>`)
+            $('.book-text-wrapper').append(`<span onclick="setClick(${arr})" style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}"></span>`)
         } else {
-            $('.book-text-wrapper').append(`<span style="left: ${v.x}; top: ${v.y}; max-width: ${v.width}; color: ${v.color}; ${v.bg ? 'border-radius: .25rem; padding: .25rem .5rem; background-color: '+v.bg+';' : ''}">${v.text}</span>`)
+            $('.book-text-wrapper').append(`<span style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}"></span>`)
         }
 
         if(!obj.clickable) {

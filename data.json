@@ -4,341 +4,235 @@
         "clickable": true,
         "dataText": [
             {
-                "text": "<img src=\"img/buttons/Panduan.png\">",
+                "text": "img/buttons/Panduan.png",
                 "x": "calc(100% - 6rem)",
                 "y": "56%",
-                "width": "5rem",
-                "color": "black",
+                "width": "calc(2rem + 3vw)",
                 "action": [
                     {
                         "img": "img/Panduan Orang Tua.jpg",
                         "dataText": [
                             {
-                                "text": "",
-                                "x": "",
-                                "y": "",
-                                "width": "",
-                                "color": ""
+                                "text": ""
                             }
                         ]
                     }
                 ]
             },
             {
-                "text": "<img src=\"img/buttons/Read.png\">",
+                "text": "img/buttons/Read.png",
                 "x": "calc(100% - 6rem)",
                 "y": "40%",
-                "width": "5rem",
-                "color": "black",
+                "width": "calc(2rem + 3vw)",
                 "action": [
                     {
-                        "img": "img/1.jpg",
+                        "img": "img/1/1.jpg",
                         "dataText": [
                             {
-                                "text": "Hi! Perkenalkan, kami Kaka si Boneka Monyet, Popo si Boneka Beruang dan Puma si Kucing Hitam.",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black"
+                                "text": "img/1/1.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/2.jpg",
+                        "img": "img/2/2.jpg",
                         "dataText": [
                             {
-                                "text": "Kami bertiga tinggal di rumah Nanda, sahabat kami. Sekarang, Nanda duduk di kelas 4 SD",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black"
+                                "text": "img/2/2.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/3.jpg",
+                        "img": "img/3/3.jpg",
                         "dataText": [
                             {
-                                "text": "Nanda sangat menyayangi kami. Kami pun sangat menyayangi Nanda. Ssst.. Kami punya kekuatan untuk melihat dan merasakan apa yang Nanda rasakan",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black"
+                                "text": "img/3/3.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/4.jpg",
+                        "img": "img/4/4.jpg",
                         "dataText": [
                             {
-                                "text": "Tahukah kamu? Di dalam hati kita ada sebuah botol ajaib berisi semua perasaan yang kita rasakan.",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black",
-                                "bg": "rgba(255,255,255,.3)"
+                                "text": "img/4/4.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/5.jpg",
+                        "img": "img/5/5.jpg",
                         "dataText": [
                             {
-                                "text": "Perasaan senang, marah, ataupun gabungan beberapa perasaan",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black",
-                                "bg": "rgba(255,255,255,.3)"
+                                "text": "img/5/5.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/6.jpg",
+                        "img": "img/6/6.jpg",
                         "dataText": [
                             {
-                                "text": "Ada hari di mana Nanda merasa sedih. Namun hari-hari itu cepat berlalu. Kami berharap Nanda selalu dikelilingi perasaan bahagia",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black"
+                                "text": "img/6/6.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/6.5.jpg",
+                        "img": "img/6.5/6.5.jpg",
                         "dataText": [
                             {
-                                "text": "Namun suatu hari, kabut dan awan gelap yang menyelimuti hati Nanda tak kunjung pergi",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black",
-                                "bg": "rgba(255,255,255,.3)"
+                                "text": "img/6.5/6.5.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/7.jpg",
+                        "img": "img/7/7.jpg",
                         "dataText": [
                             {
-                                "text": "Sepertinya, Nanda merasa Kesepian",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black"
+                                "text": "img/7/7.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/8.jpg",
+                        "img": "img/8/8.jpg",
                         "dataText": [
                             {
-                                "text": "Rasa kesepian itu membuat Nanda sedih Padahal, Nanda sudah bisa kembali bertemu teman-teman di sekolah dan bermain ke luar",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black"
+                                "text": "img/8/8.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/9.jpg",
+                        "img": "img/9/9.jpg",
                         "dataText": [
                             {
-                                "text": "Kenapa ya Nanda merasa kesepian? Apakah kamu tahu? atau, apakah kamu pernah merasakan hal ini?",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black"
+                                "text": "img/9/9.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/10.jpg",
+                        "img": "img/10/10.jpg",
                         "dataText": [
                             {
-                                "text": "Apakah mungkin karena teman-teman Nanda tidak mengajak bermain?",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black"
+                                "text": "img/10/10.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/11.jpg",
+                        "img": "img/11/11.jpg",
                         "dataText": [
                             {
-                                "text": "Atau karena Ayah dan Ibu harus pergi ke luar kota?",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black"
+                                "text": "img/11/11.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/12.jpg",
+                        "img": "img/12/12.jpg",
                         "dataText": [
                             {
-                                "text": "Mungkin juga karena saat berdiam sendiri, Nanda tidak tahu harus melakukan apa?",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black"
+                                "text": "img/12/12.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/13.jpg",
+                        "img": "img/13/13.jpg",
                         "dataText": [
                             {
-                                "text": "Kesepian bisa dirasakan kapan saja. Bahkan, ketika Nanda dikelilingi banyak orang, walaupun ia tidak sendirian.",
-                                "x": "24px",
-                                "y": "64px",
-                                "width": "80%",
-                                "color": "black"
+                                "text": "img/13/13.png"
                             }
                         ]
                     },
                     {
-                        "img": "img/14.jpg",
+                        "img": "img/14/14.jpg",
                         "clickable": true,
                         "dataText": [
                             {
-                                "text": "<img src=\"img/text/Ayah Ibu Ke Luar Kota.png\">",
+                                "text": "img/action/Ayah Ibu Ke Luar Kota.png",
                                 "x": "40px",
                                 "y": "20%",
-                                "width": "50%",
-                                "color": "black",
+                                "width": "40%",
                                 "action": [
                                     {
-                                        "img": "img/15.jpg",
+                                        "img": "img/15/15.jpg",
                                         "dataText": [
                                             {
-                                                "text": "Akhir-akhir ini Ayah dan Ibu sering keluar kota untuk bekerja. Apakah kamu pernah merasakan hal ini juga?",
-                                                "x": "40px",
-                                                "y": "72px",
-                                                "width": "70%",
-                                                "color": "black"
+                                                "text": "img/15/15.png"
                                             }
                                         ]
                                     },
                                     {
-                                        "img": "img/16.jpg",
+                                        "img": "img/16/16.jpg",
                                         "dataText": [
                                             {
-                                                "text": "Pagi itu, Nanda bersiap berangkat ke sekolah. Sementara itu, Ibu tampak sibuk di ruang tamu.",
-                                                "x": "40px",
-                                                "y": "72px",
-                                                "width": "70%",
-                                                "color": "black"
+                                                "text": "img/16/16.png"
                                             }
                                         ]
                                     },
                                     {
-                                        "img": "img/17.jpg",
+                                        "img": "img/17/17.jpg",
                                         "dataText": [
                                             {
-                                                "text": "Nanda merasa sedih tapi enggan untuk bercerita pada Ibu. Seusai sarapan, Nanda berpamitan dan bersiap pergi ke sekolah.",
-                                                "x": "40px",
-                                                "y": "72px",
-                                                "width": "70%",
-                                                "color": "black"
+                                                "text": "img/17/17.png"
                                             }
                                         ]
                                     },
                                     {
-                                        "img": "img/18.jpg",
+                                        "img": "img/18/18.jpg",
                                         "dataText": [
                                             {
-                                                "text": "“Nanda sudah siap?” Ayah berseru dari dalam mobil. “Sudah Ayah, ayo jalan” sahut Nanda",
-                                                "x": "40px",
-                                                "y": "72px",
-                                                "width": "70%",
-                                                "color": "black"
+                                                "text": "img/18/18.png"
                                             }
                                         ]
                                     },
                                     {
-                                        "img": "img/19.jpg",
+                                        "img": "img/19/19.jpg",
                                         "dataText": [
                                             {
-                                                "text": "Ayah melihat ekspresi Nanda yang murung dari kaca mobil. “Ada apa Nanda?” tanya Ayah Apa yang harus Nanda lakukan?",
-                                                "x": "40px",
-                                                "y": "72px",
-                                                "width": "70%",
-                                                "color": "black"
+                                                "text": "img/19/19.png"
                                             }
                                         ]
                                     }
                                 ]
                             },
                             {
-                                "text": "<img src=\"img/text/Tidak Punya Teman.png\">",
+                                "text": "img/action/Tidak Punya Teman.png",
                                 "x": "40vw",
                                 "y": "20%",
-                                "width": "50%",
+                                "width": "40%",
                                 "color": "black",
                                 "action": [
                                     {
-                                        "img": "img/28.jpg",
+                                        "img": "img/28/28.jpg",
                                         "dataText": [
                                             {
-                                                "text": "Akhir-akhir ini Ayah dan Ibu sering keluar kota untuk bekerja. Apakah kamu pernah merasakan hal ini juga?",
-                                                "x": "40px",
-                                                "y": "72px",
-                                                "width": "70%",
-                                                "color": "black"
+                                                "text": "img/28/28.png"
                                             }
                                         ]
                                     },
                                     {
-                                        "img": "img/29.jpg",
+                                        "img": "img/29/29.jpg",
                                         "dataText": [
                                             {
-                                                "text": "Pagi itu, Nanda bersiap berangkat ke sekolah. Sementara itu, Ibu tampak sibuk di ruang tamu.",
-                                                "x": "40px",
-                                                "y": "72px",
-                                                "width": "70%",
-                                                "color": "black"
+                                                "text": "img/29/29.png"
                                             }
                                         ]
                                     },
                                     {
-                                        "img": "img/30.jpg",
+                                        "img": "img/30/30.jpg",
                                         "dataText": [
                                             {
-                                                "text": "Nanda merasa sedih tapi enggan untuk bercerita pada Ibu. Seusai sarapan, Nanda berpamitan dan bersiap pergi ke sekolah.",
-                                                "x": "40px",
-                                                "y": "72px",
-                                                "width": "70%",
-                                                "color": "black"
+                                                "text": "img/30/30.png"
                                             }
                                         ]
                                     },
                                     {
-                                        "img": "img/31.jpg",
+                                        "img": "img/31/31.jpg",
                                         "dataText": [
                                             {
-                                                "text": "“Nanda sudah siap?” Ayah berseru dari dalam mobil. “Sudah Ayah, ayo jalan” sahut Nanda",
-                                                "x": "40px",
-                                                "y": "72px",
-                                                "width": "70%",
-                                                "color": "black"
+                                                "text": "img/31/31.png"
                                             }
                                         ]
                                     },
                                     {
-                                        "img": "img/32.jpg",
+                                        "img": "img/32/32.jpg",
                                         "dataText": [
                                             {
-                                                "text": "Ayah melihat ekspresi Nanda yang murung dari kaca mobil. “Ada apa Nanda?” tanya Ayah Apa yang harus Nanda lakukan?",
-                                                "x": "40px",
-                                                "y": "72px",
-                                                "width": "70%",
-                                                "color": "black"
+                                                "text": "img/32/32.png"
                                             }
                                         ]
                                     }
