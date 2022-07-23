@@ -36,6 +36,10 @@ $(document).ready(async function() {
     })
 
     $('.book-music').click(function() {
+        if($('#book-music')[0].paused) {
+            $('#book-music')[0].play()
+            return
+        }
         $('#book-music')[0].muted = !$('#book-music')[0].muted
         $('#book-music')[0].muted ? $(this).find('img').attr('src', 'img/buttons/Muted.png') : $(this).find('img').attr('src', 'img/buttons/Music.png')
     })
