@@ -56,13 +56,13 @@ $(document).ready(async function() {
 
     if($(window).width() < 576) {
         $('.btn-fullscreen').click(function() {
-            $('.book')[0].requestFullscreen()
+            document.requestFullscreen()
             screen.orientation.lock('landscape-primary')
         })
     }
 
     $('.book-fullscreen').click(function() {
-        isFullscreen ? document.exitFullscreen() : $('.book')[0].requestFullscreen()
+        isFullscreen ? document.exitFullscreen() : document.requestFullscreen()
     })
 
     $('.book').on('fullscreenchange', function() {
