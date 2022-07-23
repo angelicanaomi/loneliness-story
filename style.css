@@ -64,6 +64,7 @@ body {
     height: 100%;
     object-fit: contain;
     display: block;
+    user-select: none;
 }
 .book-control {
     position: absolute;
@@ -98,7 +99,7 @@ body {
     width: 100%;
     background-color: transparent;
     height: 2rem;
-    border-radius: 2rem;
+    border-radius: 3rem;
     border: 2px solid #FFF;
     position: relative;
     overflow: hidden;

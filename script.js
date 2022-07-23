@@ -86,6 +86,14 @@ function updateSlide() {
     $('.book-image').attr('src', obj.img)
     $('.book-text-wrapper').html('')
     $(obj.dataText).each(function(i, v) {
+        if(v.goto == "first") {
+            $('.book-text-wrapper').append(`<span onclick="home(); setClick(0, 1)" style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}"></span>`)
+            return
+        } else if(v.goto == "home") {
+            $('.book-text-wrapper').append(`<span onclick="home()" style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}"></span>`)
+            return
+        }
+
         if(v.action) {
             const arr = [curId, i]
             $('.book-text-wrapper').append(`<span onclick="setClick(${arr})" style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}"></span>`)
@@ -125,7 +133,7 @@ function controlSlide(add) {
     }
 }
 
-function setClick(current, idx) {
+function setClick(current, idx, reset=false) {
     dataActive = dataActive[current].dataText[idx].action
     index.push([current, idx])
     curId = 0

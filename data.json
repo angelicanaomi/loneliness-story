@@ -143,9 +143,9 @@
                         "dataText": [
                             {
                                 "text": "img/action/Ayah Ibu Ke Luar Kota.png",
-                                "x": "40px",
-                                "y": "20%",
-                                "width": "40%",
+                                "x": "50%",
+                                "y": "10%",
+                                "width": "30%",
                                 "action": [
                                     {
                                         "img": "img/15/15.jpg",
@@ -181,19 +181,137 @@
                                     },
                                     {
                                         "img": "img/19/19.jpg",
+                                        "clickable": true,
                                         "dataText": [
                                             {
-                                                "text": "img/19/19.png"
+                                                "text": "img/action/Cerita.png",
+                                                "x": "70%",
+                                                "y": "70%",
+                                                "width": "35%",
+                                                "action": [
+                                                    {
+                                                        "img": "img/20/20.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/20/20.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/21/21.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/21/21.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/22/22.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/22/22.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/23/23.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/23/23.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/credit/Title.jpg",
+                                                        "clickable": true,
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/action/Credit- Home.png",
+                                                                "x": "20%",
+                                                                "y": "80%",
+                                                                "width": "30%",
+                                                                "goto": "home"
+                                                            },
+                                                            {
+                                                                "text": "img/action/Credit- Kembali.png",
+                                                                "x": "50%",
+                                                                "y": "80%",
+                                                                "width": "30%",
+                                                                "goto": "first"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "text": "img/action/Diam.png",
+                                                "x": "70%",
+                                                "y": "50%",
+                                                "width": "40%",
+                                                "action": [
+                                                    {
+                                                        "img": "img/24/24.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/24/24.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/25/25.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/25/25.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/26/26.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/26/26.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/27/27.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/27/27.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/credit/Title.jpg",
+                                                        "clickable": true,
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/action/Credit- Home.png",
+                                                                "x": "20%",
+                                                                "y": "80%",
+                                                                "width": "30%",
+                                                                "goto": "home"
+                                                            },
+                                                            {
+                                                                "text": "img/action/Credit- Kembali.png",
+                                                                "x": "50%",
+                                                                "y": "80%",
+                                                                "width": "30%",
+                                                                "goto": "first"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
                                 ]
                             },
                             {
-                                "text": "img/action/Tidak Punya Teman.png",
-                                "x": "40vw",
-                                "y": "20%",
-                                "width": "40%",
+                                "text": "img/action/Bosan.png",
+                                "x": "70%",
+                                "y": "60%",
+                                "width": "30%",
                                 "color": "black",
                                 "action": [
                                     {
@@ -230,9 +348,179 @@
                                     },
                                     {
                                         "img": "img/32/32.jpg",
+                                        "clickable": true,
                                         "dataText": [
                                             {
-                                                "text": "img/32/32.png"
+                                                "text": "img/action/Hobi.png",
+                                                "x": "0",
+                                                "y": "20%",
+                                                "width": "40%",
+                                                "action": [
+                                                    {
+                                                        "img": "img/34/34.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/34/34.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/35/35.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/35/35.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/36/36.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/36/36.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/39/39.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/39/39.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/40/40.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/40/40.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/credit/Title.jpg",
+                                                        "clickable": true,
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/action/Credit- Home.png",
+                                                                "x": "20%",
+                                                                "y": "80%",
+                                                                "width": "30%",
+                                                                "goto": "home"
+                                                            },
+                                                            {
+                                                                "text": "img/action/Credit- Kembali.png",
+                                                                "x": "50%",
+                                                                "y": "80%",
+                                                                "width": "30%",
+                                                                "goto": "first"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "text": "img/action/Komik.png",
+                                                "x": "0",
+                                                "y": "40%",
+                                                "width": "40%",
+                                                "action": [
+                                                    {
+                                                        "img": "img/37/37.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/37/37.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/38/38.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/38/38.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/39/39.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/39/39.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/40/40.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/40/40.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/credit/Title.jpg",
+                                                        "clickable": true,
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/action/Credit- Home.png",
+                                                                "x": "20%",
+                                                                "y": "80%",
+                                                                "width": "30%",
+                                                                "goto": "home"
+                                                            },
+                                                            {
+                                                                "text": "img/action/Credit- Kembali.png",
+                                                                "x": "50%",
+                                                                "y": "80%",
+                                                                "width": "30%",
+                                                                "goto": "first"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "text": "img/action/Telepon teman.png",
+                                                "x": "0",
+                                                "y": "60%",
+                                                "width": "40%",
+                                                "action": [
+                                                    {
+                                                        "img": "img/33/33.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/33/33.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/27/27.jpg",
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/27/27.png"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "img": "img/credit/Title.jpg",
+                                                        "clickable": true,
+                                                        "dataText": [
+                                                            {
+                                                                "text": "img/action/Credit- Home.png",
+                                                                "x": "20%",
+                                                                "y": "80%",
+                                                                "width": "30%",
+                                                                "goto": "home"
+                                                            },
+                                                            {
+                                                                "text": "img/action/Credit- Kembali.png",
+                                                                "x": "50%",
+                                                                "y": "80%",
+                                                                "width": "30%",
+                                                                "goto": "first"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
