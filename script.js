@@ -79,6 +79,7 @@ $(document).ready(async function() {
         const obj = dataActive[curId]
 
         setSlide(obj)
+        $('.book-loading').removeClass('show')
     })
 })
 
@@ -93,6 +94,7 @@ function updateSlide() {
         $('.book-bottom').show()
     }
 
+    $('.book-loading').addClass('show')
     $('.book-image').attr('src', obj.img)
 }
 
@@ -100,18 +102,18 @@ function setSlide(obj) {
     $('.book-text-wrapper').html('')
     $(obj.dataText).each(function(i, v) {
         if(v.goto == "first") {
-            $('.book-text-wrapper').append(`<span onclick="home(); setClick(0, 1)" style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}"></span>`)
+            $('.book-text-wrapper').append(`<span onclick="skipPage()" style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}" alt=" "></span>`)
             return
         } else if(v.goto == "home") {
-            $('.book-text-wrapper').append(`<span onclick="home()" style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}"></span>`)
+            $('.book-text-wrapper').append(`<span onclick="home()" style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}" alt=" "></span>`)
             return
         }
 
         if(v.action) {
             const arr = [curId, i]
-            $('.book-text-wrapper').append(`<span onclick="setClick(${arr})" style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}"></span>`)
+            $('.book-text-wrapper').append(`<span onclick="setClick(${arr})" style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}" alt=" "></span>`)
         } else {
-            $('.book-text-wrapper').append(`<span style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}"></span>`)
+            $('.book-text-wrapper').append(`<span style="left: ${v.x}; top: ${v.y}; max-width: ${v.width};"><img src="${v.text}" alt=" "></span>`)
         }
 
         if(!obj.clickable) {
@@ -159,5 +161,13 @@ function home() {
     index = []
     curId = 0
 
+    updateSlide()
+}
+
+function skipPage() {
+    dataActive = data[0].dataText[1].action
+    index = [[0,1]]
+    curId = 14
+    
     updateSlide()
 }

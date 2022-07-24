@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 body {
     font-family: 'Itim', cursive;
@@ -120,6 +121,24 @@ body {
 }
 .btn-fullscreen {
     display: none;
+}
+.book-loading {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    font-size: 1.5rem;
+    color: #FFF;
+}
+.book-loading.show {
+    display: flex;
 }
 /* end: Book */
 

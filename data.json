@@ -5,23 +5,20 @@
         "dataText": [
             {
                 "text": "img/buttons/Panduan.png",
-                "x": "calc(100% - 6rem)",
+                "x": "calc(100% - 18rem)",
                 "y": "56%",
                 "width": "calc(2rem + 3vw)",
                 "action": [
                     {
                         "img": "img/Panduan Orang Tua.jpg",
-                        "dataText": [
-                            {
-                                "text": ""
-                            }
-                        ]
+                        "clickable": true,
+                        "dataText": []
                     }
                 ]
             },
             {
                 "text": "img/buttons/Read.png",
-                "x": "calc(100% - 6rem)",
+                "x": "calc(100% - 18rem)",
                 "y": "40%",
                 "width": "calc(2rem + 3vw)",
                 "action": [
@@ -66,18 +63,18 @@
                         ]
                     },
                     {
-                        "img": "img/6/6.jpg",
-                        "dataText": [
-                            {
-                                "text": "img/6/6.png"
-                            }
-                        ]
-                    },
-                    {
                         "img": "img/6.5/6.5.jpg",
                         "dataText": [
                             {
                                 "text": "img/6.5/6.5.png"
+                            }
+                        ]
+                    },
+                    {
+                        "img": "img/6/6.jpg",
+                        "dataText": [
+                            {
+                                "text": "img/6/6.png"
                             }
                         ]
                     },
@@ -142,9 +139,9 @@
                         "clickable": true,
                         "dataText": [
                             {
-                                "text": "img/action/Ayah Ibu Ke Luar Kota.png",
+                                "text": "img/action/14_Ayah_Ibu.png",
                                 "x": "50%",
-                                "y": "10%",
+                                "y": "5%",
                                 "width": "30%",
                                 "action": [
                                     {
@@ -184,10 +181,13 @@
                                         "clickable": true,
                                         "dataText": [
                                             {
-                                                "text": "img/action/Cerita.png",
-                                                "x": "70%",
-                                                "y": "70%",
-                                                "width": "35%",
+                                                "text": "img/19/19.png"
+                                            },
+                                            {
+                                                "text": "img/action/19_Cerita_kepada_Ayah.png",
+                                                "x": "72%",
+                                                "y": "80%",
+                                                "width": "25%",
                                                 "action": [
                                                     {
                                                         "img": "img/20/20.jpg",
@@ -244,10 +244,10 @@
                                                 ]
                                             },
                                             {
-                                                "text": "img/action/Diam.png",
-                                                "x": "70%",
-                                                "y": "50%",
-                                                "width": "40%",
+                                                "text": "img/action/19_Berdiam.png",
+                                                "x": "72%",
+                                                "y": "56%",
+                                                "width": "25%",
                                                 "action": [
                                                     {
                                                         "img": "img/24/24.jpg",
@@ -308,10 +308,10 @@
                                 ]
                             },
                             {
-                                "text": "img/action/Bosan.png",
-                                "x": "70%",
+                                "text": "img/action/14_Bosan.png",
+                                "x": "80%",
                                 "y": "60%",
-                                "width": "30%",
+                                "width": "20%",
                                 "color": "black",
                                 "action": [
                                     {
@@ -351,10 +351,13 @@
                                         "clickable": true,
                                         "dataText": [
                                             {
-                                                "text": "img/action/Hobi.png",
-                                                "x": "0",
-                                                "y": "20%",
-                                                "width": "40%",
+                                                "text": "img/32/32.png"
+                                            },
+                                            {
+                                                "text": "img/action/32_Hobby.png",
+                                                "x": "8%",
+                                                "y": "40%",
+                                                "width": "25%",
                                                 "action": [
                                                     {
                                                         "img": "img/34/34.jpg",
@@ -419,10 +422,10 @@
                                                 ]
                                             },
                                             {
-                                                "text": "img/action/Komik.png",
-                                                "x": "0",
-                                                "y": "40%",
-                                                "width": "40%",
+                                                "text": "img/action/32_Beli_komik.png",
+                                                "x": "8%",
+                                                "y": "60%",
+                                                "width": "25%",
                                                 "action": [
                                                     {
                                                         "img": "img/37/37.jpg",
@@ -479,10 +482,10 @@
                                                 ]
                                             },
                                             {
-                                                "text": "img/action/Telepon teman.png",
-                                                "x": "0",
-                                                "y": "60%",
-                                                "width": "40%",
+                                                "text": "img/action/32_Telepon_teman.png",
+                                                "x": "8%",
+                                                "y": "80%",
+                                                "width": "25%",
                                                 "action": [
                                                     {
                                                         "img": "img/33/33.jpg",
@@ -521,6 +524,34 @@
                                                         ]
                                                     }
                                                 ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "text": "img/action/14_Teman.png",
+                                "x": "5%",
+                                "y": "30%",
+                                "width": "30%",
+                                "action": [
+                                    {
+                                        "img": "img/credit/Title.jpg",
+                                        "clickable": true,
+                                        "dataText": [
+                                            {
+                                                "text": "img/action/Credit- Home.png",
+                                                "x": "20%",
+                                                "y": "80%",
+                                                "width": "30%",
+                                                "goto": "home"
+                                            },
+                                            {
+                                                "text": "img/action/Credit- Kembali.png",
+                                                "x": "50%",
+                                                "y": "80%",
+                                                "width": "30%",
+                                                "goto": "first"
                                             }
                                         ]
                                     }
