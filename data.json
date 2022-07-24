@@ -5,7 +5,7 @@
         "dataText": [
             {
                 "text": "img/buttons/Panduan.png",
-                "x": "calc(100% - 18rem)",
+                "x": "73%",
                 "y": "56%",
                 "width": "calc(2rem + 3vw)",
                 "action": [
@@ -18,7 +18,7 @@
             },
             {
                 "text": "img/buttons/Read.png",
-                "x": "calc(100% - 18rem)",
+                "x": "73%",
                 "y": "40%",
                 "width": "calc(2rem + 3vw)",
                 "action": [
