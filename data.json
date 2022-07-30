@@ -139,9 +139,12 @@
                         "clickable": true,
                         "dataText": [
                             {
+                                "text": "img/14/14.png"
+                            },
+                            {
                                 "text": "img/action/14_Ayah_Ibu.png",
                                 "x": "50%",
-                                "y": "5%",
+                                "y": "20%",
                                 "width": "30%",
                                 "action": [
                                     {
